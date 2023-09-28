@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
     function loadOwls(n) {
         const bigDiv = document.getElementById('big-div');
     
-        for (let i = 0; i < n; i++) { // Carrega 5 imagens por vez
+        for (let i = 0; i < n; i++) {
             const imgSrc = randomOwl();
             const smallDiv = document.createElement('div');
             smallDiv.className = 'small-div';
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', function () {
     
     window.addEventListener('scroll', () => {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            loadOwls(1); // Carrega mais imagens quando o usuário rolar até o final
+            loadOwls(1);
         }
     });
 });
